@@ -1,16 +1,10 @@
-document
-  .getElementById("registerForm")
-  .addEventListener("submit", function (event) {
+document.getElementById("registerForm").addEventListener("submit", function (event) {
     event.preventDefault();
     let valid = true;
 
-    // Clear old errors
-    document
-      .querySelectorAll(".error-message")
-      .forEach((e) => (e.innerText = ""));
-    document
-      .querySelectorAll(".form-control, .form-select")
-      .forEach((e) => e.classList.remove("error"));
+
+    document.querySelectorAll(".error-message").forEach(e => e.innerText = "");
+    document.querySelectorAll(".form-control, .form-select").forEach(e => e.classList.remove("error"));
 
     // Helper
     function setError(id, message) {
@@ -43,10 +37,7 @@ document
     if (phoneVal === "") {
       setError("phone", "Phone number is required");
     } else if (!/^[6-9]\d{9}$/.test(phoneVal)) {
-      setError(
-        "phone",
-        "Enter valid 10-digit number starting with 6, 7, 8, or 9"
-      );
+      setError("phone", "Enter valid 10-digit number starting with 6, 7, 8, or 9");
     }
 
     if (emailVal === "") {
