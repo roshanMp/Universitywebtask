@@ -42,7 +42,7 @@ document
 
     if (phoneVal === "") {
       setError("phone", "Phone number is required");
-    } else if (phoneVal) {
+    } else if (!/^[6-9]\d{9}$/.test(phoneVal)) {
       setError(
         "phone",
         "Enter valid 10-digit number starting with 6, 7, 8, or 9"
@@ -51,7 +51,7 @@ document
 
     if (emailVal === "") {
       setError("email", "Email is required");
-    } else if (emailVal) {
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
       setError("email", "Enter a valid email address");
     }
 
