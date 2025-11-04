@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a6bd61953f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">University</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content text-white">
+        <h1>Welcome to our new students</h1>
+        <p>
+          World-class education, now in India with new campus. Dedicated to
+          research, teaching, and the extension of the University’s mission for
+          the good.
+        </p>
+        <a href="#" class="btn"
+          >Connect with us<i class="fa-solid fa-arrow-right"></i
+        ></a>
+      </div>
+    </section>
+
+    <!-- USP Section -->
+    <section class="usp-section container">
+      <h3>USP of Mumbai campus</h3>
+      <div class="row gy-4">
+        <div class="col-md-3 col-6">
+          <div class="usp-card">
+            <h4>UK Degree in India</h4>
+            <p>
+              Earn a globally respected University degree without leaving
+              Mumbai.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="usp-card">
+            <h4>UK Degree in India</h4>
+            <p>
+              Earn a globally respected University degree without leaving
+              Mumbai.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="usp-card">
+            <h4>UK Degree in India</h4>
+            <p>
+              Earn a globally respected University degree without leaving
+              Mumbai.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-3 col-6">
+          <div class="usp-card" style="border: none">
+            <h4>UK Degree in India</h4>
+            <p>
+              Earn a globally respected University degree without leaving
+              Mumbai.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Undergraduate Courses -->
+    <section class="courses">
+      <div class="container">
+        <h3 class="text-start">Undergraduate courses</h3>
+        <p class="text-start mb-5">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div class="row gy-4 justify-content-center">
+          <div class="col-md-4">
+            <div class="card course-card">
+              <img src="1.png" class="card-img-top" alt="Economics" />
+              <div class="card-body">
+                <h5>Economics (BSc)</h5>
+                <p>Academic year: 2025 | Duration: 3 Years</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card course-card">
+              <img src="2.png" class="card-img-top" alt="Data Science" />
+              <div class="card-body">
+                <h5>Data Science (BSc)</h5>
+                <p>Academic year: 2025 | Duration: 3 Years</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card course-card">
+              <img
+                src="3.png"
+                class="card-img-top"
+                alt="Economics + Data Science"
+              />
+              <div class="card-body">
+                <h5>Economics with Data Science (BSc)</h5>
+                <p>Academic year: 2025 | Duration: 3 Years</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Register Form -->
+
+    <div class="container">
+      <div class="form-container">
+        <h3 class="form-title">Register your interest</h3>
+        <form id="registerForm" novalidate>
+          <div class="mb-3">
+            <label class="form-label"
+              >I am enquiring as <span class="text-danger">*</span></label
+            >
+            <select class="form-select" id="enquiry">
+              <option value="">Please select</option>
+              <option>Parent</option>
+              <option>Student</option>
+            </select>
+            <div class="error-message" id="enquiryError"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label"
+                >Grade <span class="text-danger">*</span></label
+              >
+              <select class="form-select" id="grade">
+                <option value="">Please select</option>
+                <option>10</option>
+                <option>12</option>
+              </select>
+              <div class="error-message" id="gradeError"></div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label"
+                >Board <span class="text-danger">*</span></label
+              >
+              <select class="form-select" id="board">
+                <option value="">Please select</option>
+                <option>CBSE</option>
+                <option>ICSE</option>
+              </select>
+              <div class="error-message" id="boardError"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label"
+                >First name <span class="text-danger">*</span></label
+              >
+              <input type="text" class="form-control" id="fname" />
+              <div class="error-message" id="fnameError"></div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label"
+                >Surname <span class="text-danger">*</span></label
+              >
+              <input type="text" class="form-control" id="lname" />
+              <div class="error-message" id="lnameError"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label"
+                >Country <span class="text-danger">*</span></label
+              >
+              <select class="form-select" id="country">
+                <option value="">Please select</option>
+                <option>India</option>
+                <option>USA</option>
+              </select>
+              <div class="error-message" id="countryError"></div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label"
+                >City <span class="text-danger">*</span></label
+              >
+              <input type="text" class="form-control" id="city" />
+              <div class="error-message" id="cityError"></div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label"
+                >Phone number <span class="text-danger">*</span></label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="phone"
+                maxlength="10"
+                placeholder="e.g. 9876543210"
+              />
+              <div class="error-message" id="phoneError"></div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label"
+                >Email <span class="text-danger">*</span></label
+              >
+              <input type="email" class="form-control" id="email" />
+              <div class="error-message" id="emailError"></div>
+            </div>
+          </div>
+
+          <div class="form-check mb-3">
+            <input class="form-check-input" type="checkbox" id="agree" />
+            <label class="form-check-label" for="agree">
+              Lorem ipsum dolor sit amet consectetur. Amet imperdiet augue
+              viverra hac est at nisi laoreet. Nibh nisl et egestas pellentesque
+              placerat ultrices sed laoreet. Nunc mi ultrices viverra nunc.
+            </label>
+            <div class="error-message" id="agreeError"></div>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!------------- Footer Section ---------------->
+
+    <footer class="footer bg-dark text-light py-4">
+      <div class="container">
+        <div class="row align-items-end">
+          <!-- Left Side: Logo -->
+          <div class="col-md-4 text-left text-md-start mb-3 mb-md-0">
+            <img src="logo.png" alt="Logo" class="mb-3" style="height: 54px" />
+            <div
+              class="social-icons d-flex justify-content-start justify-content-md-start gap-2"
+            >
+              <a href="#" class="btn btn-outline-light btn-sm rounded-2"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a href="#" class="btn btn-outline-light btn-sm rounded-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="btn btn-outline-light btn-sm rounded-2"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="#" class="btn btn-outline-light btn-sm rounded-2"
+                ><i class="bi bi-tiktok"></i
+              ></a>
+              <a href="#" class="btn btn-outline-light btn-sm rounded-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+
+          <!---------- Right Side: Footer Links -------------->
+
+          <div class="col-md-8 text-left text-md-end">
+            <a href="#" class="text-decoration-none text-light small mx-2"
+              >Accessibility statements</a
+            >
+            <span class="text-secondary">|</span>
+            <a href="#" class="text-decoration-none text-light small mx-2"
+              >Privacy policy</a
+            >
+            <span class="text-secondary">|</span>
+            <a href="#" class="text-decoration-none text-light small mx-2"
+              >Cookie policy</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
