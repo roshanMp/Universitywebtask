@@ -44,13 +44,13 @@ document
       setError("phone", "Phone number is required");
     } else if (phoneVal) {
       setError(
-        "phone",
+        // "phone",
         "Enter valid 10-digit number starting with 6, 7, 8, or 9"
       );
     }
 
     if (emailVal === "") {
-      setError("email", "Email is required");
+      // setError("email", "Email is required");
     } else if (emailVal) {
       setError("email", "Enter a valid email address");
     }
